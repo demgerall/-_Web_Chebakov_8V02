@@ -1,0 +1,44 @@
+.patch {
+	height: 330px;
+}
+
+.about_tab {
+	transform: translateY(30px);
+	position: absolute;
+	left: 40%;
+	
+	width: 50%;
+	height: 2000px;
+}
+
+.about_tab h1{
+	font-family: 'ligurino1';
+	font-size: 30px;
+	color: black;
+	padding-bottom: 5px;
+}
+
+.info {
+	position: absolute;
+	width: 100%;
+
+	margin-top: 70px;
+}
+
+.quote {
+	margin: 10px 0px;
+	background: #eee;
+	padding: 1em;
+	border-radius: 1em;
+ }
+ 
+ .quote figcaption,
+ .quote blockquote {
+	margin: 1em;
+ }
+
+.info p {
+	font-family: 'ligurino1';
+	font-size: 20px;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,44 @@
+/* --RSide Nav-- */
+
+.rside-nav {
+	z-index: 3;
+	width: 50px;
+	height: 100vh;
+	background: rgba(20, 20, 20, 0.5);
+	position: fixed;
+	right: 0;
+	top: 0;
+	backdrop-filter: blur(16px);
+	border-left: 7px solid #33CCCC;
+	right: -45px;
+}
+
+.rside-nav:hover {
+	right: 0;
+	transition: all .2s ease;
+}
+
+.social-links img, .info-links img {
+	width: 25px;
+	margin: 5px auto;
+	cursor: pointer;
+	transition: .5s;
+	filter: invert(1);
+}
+
+.social-links img:hover, .info-links img:hover {
+	transform: scale(1.2);
+}
+
+.social-links {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.info-links {
+	position: absolute;
+	bottom: 30px;
+	right: 12.5px;
+}

@@ -1,0 +1,81 @@
+/* --Header-- */
+
+.header {
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo {
+	width: 60px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav2 img {
+	width: 40px;
+}
+
+.nav2 h4 {
+	font-family: 'ligurino';
+	color: black;
+}
+
+.nav3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav3 img {
+	width: 40px;
+}
+
+.nav3 h4 {
+	font-family: 'ligurino';
+	color: black;
+}
+
+.nav4 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav4 img {
+	width: 40px;
+}
+
+.nav4 h4 {
+	font-family: 'ligurino';
+	color: black;
+}
+
+.nav5 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav5 img {
+	width: 40px;
+}
+
+.nav5 h4 {
+	font-family: 'ligurino';
+	color: black;
+}

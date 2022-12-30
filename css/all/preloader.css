@@ -1,0 +1,67 @@
+
+.preloader {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+
+	transition: all 0.09s ease-out;
+}
+
+.preloader--hide{
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.preloader_loader, .preloader_percents {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.preloader_percents {
+	font-family: 'ligurino1';
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@keyframes ldio-i905tfghbln {
+	0% { transform: translate(-50%,-50%) rotate(0deg); }
+	100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+.ldio-i905tfghbln div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 10px solid #33cccc;
+	border-top-color: transparent;
+	border-radius: 50%;
+}
+.ldio-i905tfghbln div {
+	animation: ldio-i905tfghbln 1s linear infinite;
+	top: 100px;
+	left: 100px
+}
+.loadingio-spinner-rolling-hn2d941yrr9 {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	overflow: hidden;
+	background: rgba(241, 242, 243, 0);
+}
+.ldio-i905tfghbln {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform: translateZ(0) scale(1);
+	backface-visibility: hidden;
+	transform-origin: 0 0; /* see note above */
+}
+.ldio-i905tfghbln div {
+	box-sizing: content-box; 
+}

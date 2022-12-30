@@ -1,0 +1,254 @@
+/* --FastBar-- */
+
+.uslugi {
+	position: relative;
+	padding-top: 80px;
+	padding-left: 100px;
+	padding-bottom: 10px;
+	margin-bottom: 950px;
+}
+
+.fastbar {
+	position: absolute;
+	width: 25%;
+	height: 100vh;
+}
+
+.search {
+	margin-top: 20px;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	overflow: hidden;
+	transition: .5s;
+	border-radius: 60px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.search.active {
+	width: 367px;
+}
+
+.search .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.search .icon::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 3px solid #33CCCC;
+	border-radius: 50%;
+	transform: translate(-2px,-2px);
+}
+
+.search .icon::after {
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 12px;
+	background: #33CCCC;
+	transform: translate(8px, 8px) rotate(-45deg);
+}
+
+.search .input {
+	position: relative;
+	width: 270px;
+	height: 60px;
+	left: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search .input input {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.clear {
+	position: absolute;
+	top: 40%;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clear::before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #33CCCC;
+	transform: rotate(45deg);
+}
+
+.clear::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background: #33CCCC;
+	transform: rotate(-45deg);
+}
+
+.fastbar p {
+	margin-top: 20px;
+	z-index: -1;
+	position: absolute;
+	overflow: hidden;
+	top: 20px;
+	left: 70px;
+	font-family: 'ligurino1';
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+.fastbar_list {
+	z-index: 100;
+	position: relative;
+	margin-top: 60px;
+	transform: translateY(5px);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.list_uslug table {
+   width: 100%;
+}
+
+.list_uslug tr {
+	padding-right: 43px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-left: 15px;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'ligurino1';
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.list_uslug tr:hover, .list_uslug .cr.active, .list_uslug .lr.active, .list_uslug .ch.active, .list_uslug .ir.active {
+	background-color: #33CCCC;
+}
+
+.list_uslug span {
+	position: absolute;
+	top: 30%;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list_uslug span::before {
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 15px;
+	background: black;
+	transform: translate(0px, 10px) rotate(45deg);
+}
+
+.list_uslug span::after {
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 15px;
+	background: black;
+	transform: translate(0px, 0px) rotate(-45deg);
+}
+
+.drop_cr, .drop_lr, .drop_ch, .drop_ir {
+	position: absolute;
+	z-index: 5;
+	width: 200px;
+	top: 2px;
+	left: -1000px;
+	background-color: #33CCCC;
+	padding-left: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.drop_cr a, .drop_lr a, .drop_ch a, .drop_ir a {
+	color: white;
+}
+
+.drop_lr {
+	top: 66px
+}
+
+.drop_ch {
+	top: 194px
+}
+
+.drop_ir {
+	top: 258px
+}
+
+.drop_cr tr, 
+.drop_lr tr, 
+.drop_ch tr, 
+.drop_ir tr {
+	z-index: 100;
+	padding-right: 43px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-left: 5px;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'ligurino1';
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.drop_cr.active, 
+.drop_lr.active, 
+.drop_ch.active, 
+.drop_ir.active {
+	left: 370px;
+}
+
+.drop_cr tr:hover, 
+.drop_lr tr:hover, 
+.drop_ch tr:hover, 
+.drop_ir tr:hover {
+	text-decoration: underline;
+}

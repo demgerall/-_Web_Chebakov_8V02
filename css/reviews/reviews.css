@@ -1,0 +1,26 @@
+.patch {
+	height: 300px;
+}
+
+.review_tab {
+	transform: translateY(30px);
+	position: absolute;
+	left: 40%;
+	
+	width: 50%;
+	height: 2000px;
+}
+
+.review_tab h1{
+	font-family: 'ligurino1';
+	font-size: 30px;
+	color: black;
+	padding-bottom: 5px;
+}
+
+.reviews {
+	position: absolute;
+	width: 100%;
+
+	margin-top: 70px;
+}

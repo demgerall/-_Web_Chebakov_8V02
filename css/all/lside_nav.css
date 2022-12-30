@@ -1,0 +1,85 @@
+/* --LSide Nav-- */
+.d30 {
+	width: 0; 
+	height: 0; 
+	border-width: 25px 15px 10px;
+	border-style: solid;
+	border-color: #33CCCC #33CCCC transparent;
+	transform: rotate(-90deg);
+	position: absolute;
+	right: -38px;
+	top: 15px;
+}
+
+.menu-l1 {
+	width: 15px;
+	position: absolute;
+	top: -20px;
+	left: -6px;
+	transform: rotate(90deg);
+}
+
+.logo1 {
+	top: 0;
+	width: 60px;
+	filter: invert(1);
+}
+
+.lside-nav {
+	z-index: 999;
+	padding: 25vh 50px;
+	position: fixed;
+	background: rgba(20, 20, 20, 0.5);
+	height: 100vh;
+	backdrop-filter: blur(16px);
+	border-right: 7px solid #33CCCC;
+	left: -250px;
+}
+
+.lside-nav:hover {
+	left: 0;
+	transition: all .2s ease;
+}
+
+.title h1 {
+	font-family: 'ligurino';
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: aliceblue;
+}
+
+.title span {
+	color: #33CCCC;
+}
+
+.list-menu a {
+	font-family: 'ligurino1';
+	font-size: 25px;
+	color: aliceblue;
+	font-weight: bold;
+	border-left: 2px solid #33CCCC;
+	padding-left: 5px;
+	transition: all .2s ease;
+}
+
+.list-menu a:hover {
+	border-left: 2px solid #33CCCC;
+	padding-left: 10px;
+	transition: all .2s ease;
+}
+
+.list-menu li {
+	margin: 20px 0;
+}
+
+.list-menu {
+	margin-bottom: 100px;
+}
+
+.footer-menu p {
+	font-family: 'ligurino';
+	font-size: 15px;
+	font-weight: bold;
+	color: aliceblue;
+	padding-left: 30px;
+}

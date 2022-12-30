@@ -1,0 +1,44 @@
+/* --Podval-- */
+
+.podval {
+	transform: translateY(83vh);
+	left: 0;
+	height: 20vh;
+	width: 1480px;
+	position: absolute;
+	z-index: -1;
+	background-color: #f0f0f0;
+}
+
+.info_podval {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	padding-bottom: 20px;
+}
+
+.card_podval {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	font-family: 'ligurino1';
+}
+
+.card_podval img {
+	width: 40px;
+	padding-right: 10px;
+}
+
+.tpu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tpu p {
+	font-family: 'ligurino1';
+	font-size: 15px;
+}

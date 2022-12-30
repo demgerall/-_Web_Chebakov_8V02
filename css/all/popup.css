@@ -1,0 +1,186 @@
+/* --Popup-- */
+
+.container_window {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#click {
+	display: none;
+}
+
+#click:checked ~.popup {
+	display: flex;
+}
+
+.popup {
+	z-index: 1000;
+	display: none;
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 20px;
+}
+
+.window {
+	z-index: 1000;
+	position: absolute;
+	max-width: 1000px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 40px;
+
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .2);
+}
+
+.left-side {
+	width: 25%;
+	height: 100%;
+	position: relative;
+
+}
+
+.left-side::before {
+	content: '';
+	position: absolute;
+	height: 70%;
+	width: 2px;
+	background: #33CCCC;
+	right: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.details {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.left-side img{
+	width: 25px;
+	margin-bottom: 10px;
+}
+
+.topic {
+	font-family: 'ligurino1';
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.text_details {
+	font-size: 14px;
+	font-family: 'ligurino1';
+}
+
+.right-side {
+	width: 75%;
+	margin-left: 75px;
+}
+
+.topic-text p {
+	font-size: 23px;
+	font-weight: bold;
+	font-family: 'ligurino1';
+	margin-bottom: 10px;
+	color: #33CCCC;
+}
+
+.right-side p {
+	margin-bottom: 20px;
+	font-family: 'ligurino1';
+	font-weight: bold;
+}
+
+.input_box {
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+}
+
+.input_box input,
+.input_box textarea {
+	width: 90%;
+	height: 90%;
+	border: none;
+
+	padding: 0 20px;
+	margin-bottom: 3px;
+
+	border-radius: 5px;
+	background-color: #c1d8da;
+}
+
+.input_box label {
+	font-size: 14px;
+	color: #afafb6;
+	padding-left: 6px;
+}
+
+.message_box {
+	min-height: 110px;
+}
+
+.input_box textarea {
+	resize: none;
+	padding: 20px;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+.right-side .button {
+	display: inline-block;
+
+}
+
+.right-side .button input[type="submit"] {
+	color: white;
+	background-color: #33CCCC;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+
+	padding: 10px 20px;
+	margin-top: 25px;
+
+	font-family: 'ligurino1';
+	font-weight: bold;
+
+	transition: .2s ease-in-out;
+}
+
+.right-side .button input[type="submit"]:hover {
+	background-color: #52d9d9;
+	transform: scale(1.1);
+}
+
+.blackout {
+	z-index: 200;
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: .2;
+}
+
+.lock {
+	overflow: hidden;
+
+}
